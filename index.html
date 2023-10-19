@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: radial-gradient(circle at -14.09% 20.12%, #ff95ff 0, #ff8eff 3.33%, #ff89ed 6.67%, #ff87d7 10%, #ff87c1 13.33%
+            , #ff8bab 16.67%, #ff9096 20%, #ff9882 23.33%, #ffa06f 26.67%, #ffa95c 30%, #ffb34b 33.33%,
+             #ffbc3a 36.67%, #ffc529 40%, #ffcd19 43.33%, #ffd50c 46.67%, #eddc0c 50%, #d8e21a 53.33%,
+              #c1e82b 56.67%, #a9ed3d 60%, #8ef150 63.33%, #6ef564 66.67%, #3ff778 70%, #00fa8d 73.33%,
+               #00fca3 76.67%, #00fdba 80%, #00fed1 83.33%, #00ffe7 86.67%,
+             #00fffe 90%, #00ffff 93.33%, #00feff 96.67%, #00fdff 100%);
+        }
+        div{
+            background-color: rgba(0, 0, 0, 0.9);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 80px;
+            border-radius: 15px;
+            color: #aff;
+        }
+        input{
+            padding: 15px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            position: right;
+        }
+        .inputSubmit{
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            
+        }
+        .inputSubmit:hover{
+            background-color: deepskyblue;
+            cursor: pointer;
+        }
+        a{
+            color: black;
+            font-size: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <a href="home.php">Voltar</a>
+    <div>
+        <h1>Login</h1>
+        <form action="teste.php" method="POST">
+            <input type="text" name="email" placeholder="Email">
+            <br><br>
+            <input type="password" name="senha" placeholder="Senha">
+            <br><br>
+            <input class="inputSubmit" type="submit" name="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
+
